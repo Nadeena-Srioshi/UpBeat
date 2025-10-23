@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bad Mood Face - Angry with frown -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFB4B4"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Face Elements -->
+    <item>
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <!-- Left Eyebrow (angry angle) -->
+            <path
+                android:pathData="M25,32 L40,38"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Right Eyebrow (angry angle) -->
+            <path
+                android:pathData="M60,38 L75,32"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Left Eye (X shape) -->
+            <path
+                android:pathData="M30,45 L38,52"
+                android:strokeWidth="2.5"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <path
+                android:pathData="M38,45 L30,52"
+                android:strokeWidth="2.5"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Right Eye (X shape) -->
+            <path
+                android:pathData="M62,45 L70,52"
+                android:strokeWidth="2.5"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <path
+                android:pathData="M70,45 L62,52"
+                android:strokeWidth="2.5"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Angry Frown -->
+            <path
+                android:pathData="M35,68 Q50,58 65,68"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+        </vector>
+    </item>
+</layer-list>

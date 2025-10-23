@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_rounded">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Reminders Setting -->
+    <LinearLayout
+        android:id="@+id/btnReminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/bg_setting_item"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_notifications"
+            android:contentDescription="Reminders" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reminders"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/tvRemindersStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_right"
+            android:contentDescription="Arrow" />
+    </LinearLayout>
+
+    <!-- Reminder Time Setting -->
+    <LinearLayout
+        android:id="@+id/btnReminderTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/bg_setting_item"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_clock"
+            android:contentDescription="Reminder Time" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reminder Interval"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/tvReminderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2h 0m"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_right"
+            android:contentDescription="Arrow" />
+    </LinearLayout>
+
+    <!-- Hydration Goal Setting -->
+    <LinearLayout
+        android:id="@+id/btnGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/bg_setting_item"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_water_drop"
+            android:contentDescription="Goal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hydration goal"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="82 ml"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_right"
+            android:contentDescription="Arrow" />
+    </LinearLayout>
+
+    <!-- Units Setting (Display only for now) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/bg_setting_item"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_ruler"
+            android:contentDescription="Units" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="units"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L,ml"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_right"
+            android:contentDescription="Arrow" />
+    </LinearLayout>
+
+</LinearLayout>

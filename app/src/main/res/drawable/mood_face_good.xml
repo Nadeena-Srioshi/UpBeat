@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Good Mood Face - Smile with happy lines -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#A8E6A3"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Face Elements -->
+    <item>
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <!-- Left Eye (dot) -->
+            <path
+                android:pathData="M32,40 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+                android:fillColor="#000000"/>
+
+            <!-- Right Eye (dot) -->
+            <path
+                android:pathData="M62,40 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+                android:fillColor="#000000"/>
+
+            <!-- Left Blush Line -->
+            <path
+                android:pathData="M20,45 L25,45"
+                android:strokeWidth="2"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <path
+                android:pathData="M20,50 L25,50"
+                android:strokeWidth="2"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Right Blush Line -->
+            <path
+                android:pathData="M75,45 L80,45"
+                android:strokeWidth="2"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <path
+                android:pathData="M75,50 L80,50"
+                android:strokeWidth="2"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Smile -->
+            <path
+                android:pathData="M35,58 Q50,68 65,58"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+        </vector>
+    </item>
+</layer-list>

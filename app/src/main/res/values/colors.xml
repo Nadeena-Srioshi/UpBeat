@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5649D4</color>
+    <color name="primary_light">#9C8AFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#4ECDC4</color>
+    <color name="secondary_dark">#3AAFA9</color>
+    <color name="secondary_light">#95E1D3</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#FFE66D</color>
+    <color name="accent_red">#FF6B6B</color>
+    <color name="accent_green">#51CF66</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F7F9FC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2D3436</color>
+    <color name="text_secondary">#636E72</color>
+    <color name="text_hint">#B2BEC3</color>
+
+    <!-- Category Colors -->
+    <color name="category_health">#E8F5E9</color>
+    <color name="category_fitness">#FFF3E0</color>
+    <color name="category_mental">#E3F2FD</color>
+    <color name="category_productivity">#F3E5F5</color>
+    <color name="category_other">#F5F5F5</color>
+
+    <!-- System Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Progress Colors -->
+    <color name="progress_background">#DFE6E9</color>
+
+    <!-- Habit Colors (from image) -->
+    <color name="habit_pink">#FFB3D9</color>
+    <color name="habit_peach">#FFD4A3</color>
+    <color name="habit_yellow">#FFF59D</color>
+    <color name="habit_light_green">#C5E1A5</color>
+    <color name="habit_blue">#B3D9FF</color>
+    <color name="habit_mint">#B2DFDB</color>
+    <color name="habit_lavender">#D1C4E9</color>
+
+</resources>

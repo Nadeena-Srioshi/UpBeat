@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_habits">
+
+    <!-- Habits Fragment -->
+    <fragment
+        android:id="@+id/nav_habits"
+        android:name="com.example.upbeat.fragments.HabitsFragment"
+        android:label="Habits"
+        tools:layout="@layout/fragment_habits">
+
+        <!-- Add navigation actions if you have detail screens -->
+        <!-- Example: navigate to add/edit habit -->
+    </fragment>
+
+    <!-- Mood Fragment -->
+    <fragment
+        android:id="@+id/nav_mood"
+        android:name="com.example.upbeat.fragments.MoodJournalFragment"
+        android:label="Mood"
+        tools:layout="@layout/fragment_mood_journal">
+
+        <!-- Add navigation actions if needed -->
+    </fragment>
+
+    <!-- Hydration Fragment -->
+    <fragment
+        android:id="@+id/nav_hydration"
+        android:name="com.example.upbeat.fragments.HydrationFragment"
+        android:label="Hydration"
+        tools:layout="@layout/fragment_hydration">
+
+        <!-- Add navigation actions if needed -->
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.upbeat.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_manageHabitsFragment"
+            app:destination="@id/manageHabitsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Manage Habits Fragment (accessed from Profile) -->
+    <fragment
+        android:id="@+id/manageHabitsFragment"
+        android:name="com.example.upbeat.fragments.ManageHabitsFragment"
+        android:label="Manage Habits"
+        tools:layout="@layout/fragment_manage_habits" />
+
+</navigation>

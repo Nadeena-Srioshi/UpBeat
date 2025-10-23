@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Okay Mood Face - Neutral with dots and straight mouth -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#A8D8EA"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Face Elements -->
+    <item>
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <!-- Left Eye (small dot) -->
+            <path
+                android:pathData="M33,40 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
+                android:fillColor="#000000"/>
+
+            <!-- Right Eye (small dot) -->
+            <path
+                android:pathData="M63,40 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
+                android:fillColor="#000000"/>
+
+            <!-- Straight Mouth -->
+            <path
+                android:pathData="M35,60 L65,60"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+        </vector>
+    </item>
+</layer-list>

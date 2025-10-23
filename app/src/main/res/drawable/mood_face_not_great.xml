@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Not Great Mood Face - Sad with tear -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#C5B9E8"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Face Elements -->
+    <item>
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <!-- Left Eye (horizontal line - closed) -->
+            <path
+                android:pathData="M30,38 L40,38"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Right Eye (horizontal line - closed) -->
+            <path
+                android:pathData="M60,38 L70,38"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"/>
+
+            <!-- Tear Drop (left side) -->
+            <path
+                android:pathData="M28,45 Q26,50 28,53 Q30,50 28,45 Z"
+                android:fillColor="#6BA3D8"/>
+
+            <!-- Frown (sad mouth) -->
+            <path
+                android:pathData="M35,65 Q50,55 65,65"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+        </vector>
+    </item>
+</layer-list>

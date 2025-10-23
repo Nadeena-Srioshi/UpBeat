@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Great Mood Face - Happy smile with closed eyes -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFD93D"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Face Elements -->
+    <item>
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <!-- Left Eye (curved line) -->
+            <path
+                android:pathData="M30,35 Q35,40 40,35"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+            <!-- Right Eye (curved line) -->
+            <path
+                android:pathData="M60,35 Q65,40 70,35"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+            <!-- Smile (big happy curve) -->
+            <path
+                android:pathData="M30,55 Q50,70 70,55"
+                android:strokeWidth="3"
+                android:strokeColor="#000000"
+                android:strokeLineCap="round"
+                android:fillColor="@android:color/transparent"/>
+
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_rounded">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder Interval"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select how often you want to be reminded to drink water"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Hours Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Hours:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <NumberPicker
+            android:id="@+id/hoursPicker"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerStyle" />
+    </LinearLayout>
+
+    <!-- Minutes Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Minutes:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <NumberPicker
+            android:id="@+id/minutesPicker"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerStyle" />
+    </LinearLayout>
+
+    <!-- Preview -->
+    <TextView
+        android:id="@+id/tvReminderPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will be reminded every 2 hours"
+        android:textSize="14sp"
+        android:textColor="#2196F3"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
